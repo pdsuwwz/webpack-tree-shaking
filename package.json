@@ -19,8 +19,8 @@
   "homepage": "https://github.com/pdsuwwz/webpack-tree-shaking#readme",
   "devDependencies": {
     "html-webpack-plugin": "^5.5.0",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.7.1"
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
   }
 }
