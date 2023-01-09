@@ -1,3 +1,5 @@
+import '@/styles/global.css'
+
 import * as Utils from '@/utils'
 
 const fragment = document.createDocumentFragment()

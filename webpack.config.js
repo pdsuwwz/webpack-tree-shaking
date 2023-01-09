@@ -22,6 +22,31 @@ module.exports = {
       '@': resolve('./src'),
     }
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      {
+        test: /\.s(c|a)ss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              // Prefer `dart-sass`
+              implementation: require('sass')
+            }
+          }
+        ]
+      }
+    ]
+  },
   devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
